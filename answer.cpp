@@ -111,7 +111,7 @@ void sendToOpenAI(const std::string &api_key, const std::string &image_base64, c
 int main() {
     try {
         std::string api_key = readApiKey("OPENAI_API_KEY");
-        std::string prompt = "Please analyze this screenshot for any unusual activities.";
+        std::string prompt = "Please identify the question(s) on the screen and answer them to the best of your ability.";
         std::string screenshot_file = "screenshot.png";
 
         std::string filename = takeScreenshot(screenshot_file);
